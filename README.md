@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-Install-Package Soenneker.Utils.ResettableLazy
+dotnet add package Soenneker.Utils.ResettableLazy
 ```
 
 ## Usage
