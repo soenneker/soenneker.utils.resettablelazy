@@ -5,7 +5,7 @@ using Soenneker.Utils.ResettableLazy.Abstract;
 namespace Soenneker.Utils.ResettableLazy;
 
 ///<inheritdoc cref="IResettableLazy{T}"/>
-public class ResettableLazy<T> : IResettableLazy<T>
+public sealed class ResettableLazy<T> : IResettableLazy<T>
 {
     private Lazy<T> _lazy;
 
