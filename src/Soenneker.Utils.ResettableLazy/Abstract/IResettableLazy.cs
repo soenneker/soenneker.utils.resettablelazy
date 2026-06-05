@@ -5,8 +5,14 @@
 /// </summary>
 public interface IResettableLazy<T>
 {
+    /// <summary>
+    /// Gets a value indicating whether the instance is value created.
+    /// </summary>
     bool IsValueCreated { get; }
 
+    /// <summary>
+    /// Gets value.
+    /// </summary>
     T Value { get; }
 
     /// <summary>
