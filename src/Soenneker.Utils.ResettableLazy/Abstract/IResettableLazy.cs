@@ -16,7 +16,7 @@ public interface IResettableLazy<T>
     T Value { get; }
 
     /// <summary>
-    /// Destroys the lazy's cache (safely), and the lazy's target will be re-initialized when fetching again
+    /// Publishes a new uninitialized lazy container. The previous value is not disposed.
     /// </summary>
     void Reset();
 }
