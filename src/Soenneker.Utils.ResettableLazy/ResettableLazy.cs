@@ -1,11 +1,12 @@
-﻿using System;
+using System.Diagnostics.CodeAnalysis;
+using System;
 using System.Threading;
 using Soenneker.Utils.ResettableLazy.Abstract;
 
 namespace Soenneker.Utils.ResettableLazy;
 
 /// <inheritdoc cref="IResettableLazy{T}" />
-public sealed class ResettableLazy<T> : IResettableLazy<T>
+public sealed class ResettableLazy<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicParameterlessConstructor)] T> : IResettableLazy<T>
 {
     private Lazy<T> _lazy;
 
